@@ -1,0 +1,9 @@
+An intel operation has discovered that key enemy operations are being stored at the address:
+
+IP:1400
+
+While monitoring traffic destined to this IP address, the following hexadecimal code was frequently present at the beginning of each connection with the server:
+
+97 8A 89 89 B1 80 86 8D
+
+Other red team assets operating parallel to yours have obtained a copy of the executable the server is based off of, and intel suggests that there is a hexadecimal XOR key located somewhere in the executable. Your objective is to locate the key, decrypt the code, and break into the enemy server.
