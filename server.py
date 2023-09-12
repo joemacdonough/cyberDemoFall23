@@ -39,11 +39,12 @@ def thread(connection):
                 break
             input = connection.recv(2048)
             time += 1
-        reply2 = str.encode('\r\nThanks for participating, '+name.strip()+'!\r\nPlease check www.i5space.com/cyberchallenge to see your name on the challenge wall!\r\n')
+        reply2 = str.encode('\r\nThanks for participating, '+name.strip()+'!\r\n')
         connection.send(reply2)
     else:
         reply = str.encode("Incorrect password. Please reconnect and try again.")
         connection.send(reply)
+        print(name.strip())
 
     connection.close()
 
@@ -57,7 +58,7 @@ server.listen(10)
 
 while True:
     Client, address = server.accept()
-    print('Connection established with '+address[0]+':'+str(address[1]))
+    #print('Connection established with '+address[0]+':'+str(address[1]))
     start_new_thread(thread, (Client,))
     tCount += 1
     print('Thread Count: ' + str(tCount))
