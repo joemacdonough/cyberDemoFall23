@@ -9,7 +9,7 @@ To use the Strings tool:
 To use the decoder tool:
 - In the command terminal, navigate to the directory containing the exercise files
 - Run the tool using the command format, replacing the numbers in the quotation marks with your encoded string and 04 with your key:
-  >python encoder.py "00 01 02 03" 04
+  >.\encoder "00 01 02 03" 04
 
 To connect to the server on Windows:
 - Open a command prompt

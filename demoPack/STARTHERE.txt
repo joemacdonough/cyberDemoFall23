@@ -2,8 +2,11 @@ An intel operation has discovered that key enemy operations are being stored at 
 
 IP:1400
 
-While monitoring traffic destined to this IP address, the following hexadecimal code was frequently present at the beginning of each connection with the server:
+While monitoring traffic destined to this IP address, the following XOR-encrypted hexadecimal code was frequently present at the beginning of each connection with the server:
 
-97 8A 89 89 B1 80 86 8D
+8D 84 86 8E 80 97 88 84 8B 8A 97 92 8A 88 84 8B
 
-Other red team assets operating parallel to yours have obtained a copy of the executable the server is based off of, and intel suggests that there is a hexadecimal XOR key located somewhere in the executable. Your objective is to locate the key, decrypt the code, and break into the enemy server.
+Other red team assets operating parallel to yours have obtained a copy of the executable the server is based off of, and intel suggests that there is a hexadecimal XOR key located somewhere in the executable. In addition, Research and Development has developed a decoder for you to use in the decryption of the code once you find the XOR key. Your objective is to locate the key, decrypt the code, and break into the enemy server.
+
+For background information, hexadecimal values are base-16 numbers that are usually denominated by the prefix '0x' and contain a combination of two letters and/or numbers.
+Examples: 0xff, 0x45, 0xb2

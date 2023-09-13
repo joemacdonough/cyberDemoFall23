@@ -2,7 +2,7 @@ import socket
 from _thread import *
 logins = 0
 suffixes = ['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th']
-password = 'rollTech'
+password = 'hackermanorwoman'
 server = socket.socket()
 host = 'localhost'
 port = 1400
